@@ -1,5 +1,5 @@
 <template>
-  <div class="champ-card">
+  <div class="ChampCard">
     <img class="picture" src="https://my-best-kennel.com/pictures/45.png"/>
     <div>
       <h2 class="firstname">Pluto</h2>
@@ -10,12 +10,12 @@
 
 <script>
 	export default {
-	  name: 'champ-card'
+	  name: 'ChampCard'
 	}
 </script>
 
 <style>
-	.champ-card {
+	.ChampCard {
 	  display: flex;
 	}
 
