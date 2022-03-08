@@ -1,12 +1,6 @@
 <template>
   <div class="champ-gallery">
 	<h1>{{ msg }}</h1>
-    <h3>Installed CLI Plugins</h3>
-
-    <h3>Essential Links</h3>
-
-    <h3>Ecosystem</h3>
-
 	<ChampCard/>
   </div>
 </template>
@@ -29,13 +23,15 @@ export default {
 	}
   },
 	components: {
-		ChampCard
+    ChampCard,
 	}
 }
 </script>
 
 <style scoped>
-h3 {
+  .ChampGallerie {
+    display: flex;
+    justify-content: center;
+  }
 
-}
 </style>
