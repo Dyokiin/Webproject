@@ -2,8 +2,8 @@
   <div class="ChampCard">
     <img class="picture" :src="pic_url"/>
     <div>
-      <h2 class="firstname"> {{name}}</h2>
-      <p class="breed">{{type}}</p>
+      <h2 class="name"> {{name}}</h2>
+      <p class="type">{{type}}</p>
     </div>  
   </div>
 </template>
