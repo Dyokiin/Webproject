@@ -9,7 +9,6 @@
       </h2>
       <h3>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          <div class="Rectangle"> </div>
       </h3>
     </ul>
     <ChampGallerie/>
@@ -17,8 +16,6 @@
 </template>
 
 <script>
-import ChampGallerie from './champ_gallerie'
-
 export default {
   name: 'Content',
   props: {
@@ -31,12 +28,9 @@ export default {
   },
   methods: {
     doStuff(){
-      console.log('xD')
+      console.log('LOL')
     }
   },
-  components: {
-    ChampGallerie
-  }
 }
 </script>
 
@@ -47,12 +41,7 @@ export default {
   margin-top : 60px;
   margin-left: 20px;
 }
-.Rectangle{
-    width: 1000px;
-    height: 10px;
-    position: absolute;
-    color: #F9C914;
-}
+
 h3{
   text-align: left;
   font-family: "Poppins";

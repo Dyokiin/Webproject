@@ -37,7 +37,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
-  background: #2c3e50;
+  background: #373F4B;
   width: 100%;
   min-height: 100vh;
 }
