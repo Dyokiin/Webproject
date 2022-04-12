@@ -12,9 +12,9 @@
 	export default {
 		name: 'ChampCard',
 		props: {
-			name: {type: String, required: true, default: "Aatrox"},
-			type: {type: String, default: "Fighter"}, 
-			pic_url: {tpye: String, default: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg"}
+			name: String,
+			type: String, 
+			pic_url: String
 		}
 	}
 </script>

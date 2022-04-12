@@ -1,25 +1,33 @@
 <template>
   <div class="champ-gallery">
-	<h1>{{ msg }}</h1>
-	<ChampCard/>
+	<ChampCard
+  v-for="champion in dataT"
+    :key="champion.data.key"
+    :name="champion.data.name" 
+    :bustPortrait="champion.data.image.full"
+  />
   </div>
 </template>
 
 <script>
 import ChampCard from './champ_card'
+import getChampData from '../api/lolAPI.js'
+getChampData()
 
 export default {
   name: 'ChampGallerie',
   data () {
-	return {
-		champs_data: []
-	}
+    return {
+      dataT: [],
+      champs_data: []
+    }
   },
   created: function() {
-	this.retrieve_champ_data()
+    this.retrieve_champ_data()
   },
   methods: {
 		async retrieve_champ_data() {
+      this.dataT = await getChampData()
 	}
   },
 	components: {
