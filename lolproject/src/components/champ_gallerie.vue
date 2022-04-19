@@ -1,10 +1,11 @@
 <template>
-  <div class="champ-gallery">
+  <div class="champ-gallery"> 
 	<ChampCard
-  v-for="champion in dataT"
-    :key="champion.data.key"
-    :name="champion.data.name" 
-    :bustPortrait="champion.data.image.full"
+  v-for="champion in dataT.entries"
+    :key="champion.entries.key"
+    :name="champion.entries.name" 
+    :type="champion.entries.type"
+    :picture="champion.entries.image.full"
   />
   </div>
 </template>

@@ -56,11 +56,12 @@ export default {
   background-blend-mode: hard-light;
   color: rgba(255, 255, 255, 0.82);
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   height: 5%;
+  width: 100%;
   z-index: 3;
   opacity: 100%;
-  position: relative;
+  position: absolute;
 }
 li{
   font-size: 22px;
