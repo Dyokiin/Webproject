@@ -27,11 +27,6 @@ export default {
       dataTab: []
     }
   },
-  methods: {
-    doStuff(){
-      console.log('MDR')
-    }
-  }
 }
 </script>
 
@@ -61,7 +56,6 @@ export default {
   width: 100%;
   z-index: 3;
   opacity: 100%;
-  position: absolute;
 }
 li{
   font-size: 22px;

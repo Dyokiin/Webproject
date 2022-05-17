@@ -3,18 +3,21 @@
     <Menu id='menu'/>
     <!-- <img alt="Vue logo" src="./assets/index.jpeg"> -->
     <Content/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Menu from './components/menu.vue'
 import Content from './components/content.vue'
+import Footer from './components/better_footer.vue'
 
 export default {
   name: 'App',
   components: {
     Menu,
-    Content
+    Content,
+    Footer
   }
 }
 </script>

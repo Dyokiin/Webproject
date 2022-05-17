@@ -1,11 +1,10 @@
 <template>
-  <div class="champ-gallery"> 
+  <div class="ChampGallerie"> 
 	<ChampCard
-  v-for="champion in dataT.entries"
-    :key="champion.entries.key"
-    :name="champion.entries.name" 
-    :type="champion.entries.type"
-    :picture="champion.entries.image.full"
+  v-for="champion in champs_data"
+    :key="champion.key"
+    :name="champion.name" 
+    :id="champion.id" 
   />
   </div>
 </template>
@@ -25,11 +24,13 @@ export default {
   },
   created: function() {
     this.retrieve_champ_data()
+    console.log(this.dhamps_data)
   },
   methods: {
 		async retrieve_champ_data() {
       this.dataT = await getChampData()
-	}
+      this.champs_data = this.dataT.data
+    }
   },
 	components: {
     ChampCard,
@@ -39,8 +40,12 @@ export default {
 
 <style scoped>
   .ChampGallerie {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
 </style>

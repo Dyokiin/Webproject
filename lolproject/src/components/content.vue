@@ -1,6 +1,5 @@
 <template>
   <div class="Content">
-    <div class="Rectangle1"></div>
     <ul>
       <h1>
         LEAGUE OF COMPREHENDS
@@ -30,11 +29,6 @@ export default {
       dataTab: []
     }
   },
-  methods: {
-    doStuff(){
-      console.log('xD')
-    }
-  },
   components: {
     ChampGallerie
   }
@@ -45,21 +39,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .Content{
-  position: absolute;
   width: 100%;
-  height: 96px;
+  height: 100%;
   left: 0%;
   top: 0%;
   margin-top : 60px;
-}
-.Rectangle1{
-  position: absolute;
-  width: 1970px;
-  height: 37px;
-  left: -80%;
-  background-color: #F9C914;
-  transform: rotate(90deg);
-  z-index: 0;
 }
 h3{
   text-align: left;
