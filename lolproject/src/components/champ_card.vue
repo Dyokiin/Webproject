@@ -30,5 +30,9 @@ export default {
 	h2 {
 		font-size: 20px;
 	}
+	.ChampCard:hover {
+		transform: scale(0.95);
+		cursor: pointer;
+	}
 
 </style>
